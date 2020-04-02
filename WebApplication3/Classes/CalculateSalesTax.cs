@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-
-namespace WebApplication3
+﻿namespace WebApplication3
 {
     public class CalculateSalesTax
     {
