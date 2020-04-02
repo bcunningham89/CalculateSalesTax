@@ -15,7 +15,5 @@ namespace WebApplication3
         public double SalesTax { get; set; }
 
         public double Total { get; set; }
-
-        public string testGit {get; set;}
     }
 }
