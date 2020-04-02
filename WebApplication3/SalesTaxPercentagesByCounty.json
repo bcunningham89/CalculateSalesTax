@@ -1,0 +1,404 @@
+{
+  "Counties": [
+    {
+      "CountyName": "Alamance",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Alexander",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Alleghany",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Anson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Ashe",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Avery",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Beaufort",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Bertie",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Bladen",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Brunswick",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Buncombe",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Burke",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Cabarrus",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Caldwell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Camden",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Carteret",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Caswell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Catawba",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Chatham",
+      "SalesTaxPercentage": 7.50
+    },
+    {
+      "CountyName": "Cherokee",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Chowan",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Clay",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Cleveland",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Columbus",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Craven",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Cumberland",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Currituck",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Dare",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Davidson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Davie",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Duplin",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Durham",
+      "SalesTaxPercentage": 7.50
+    },
+    {
+      "CountyName": "Edgecombe",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Forsyth",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Franklin",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Gaston",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Gates",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Graham",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Granville",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Greene",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Guilford",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Halifax",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Harnett",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Haywood",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Henderson",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Hertford",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Hoke",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Hyde",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Iredell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Jackson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Johnston",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Jones",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Lee",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Lenoir",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Lincoln",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Macon",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Madison",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Martin",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Mcdowell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Mecklenburg",
+      "SalesTaxPercentage": 7.25
+    },
+    {
+      "CountyName": "Mitchell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Montgomery",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Moore",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Nash",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "New Hanover",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Northampton",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Onslow",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Orange",
+      "SalesTaxPercentage": 7.50
+    },
+    {
+      "CountyName": "Pamlico",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Pasquotank",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Pender",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Perquimans",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Person",
+      "SalesTaxPercentage": 7.50
+    },
+    {
+      "CountyName": "Pitt",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Polk",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Randolph",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Richmond",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Robeson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Rockingham",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Rowan",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Rutherford",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Sampson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Scotland",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Stanly",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Stokes",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Surry",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Swain",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Transylvania",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Tyrrell",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Union",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Vance",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Wake",
+      "SalesTaxPercentage": 7.25
+    },
+    {
+      "CountyName": "Warren",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Washington",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Watauga",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Wayne",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Wilkes",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Wilson",
+      "SalesTaxPercentage": 7.00
+    },
+    {
+      "CountyName": "Yadkin",
+      "SalesTaxPercentage": 6.75
+    },
+    {
+      "CountyName": "Yancey",
+      "SalesTaxPercentage": 6.75
+    }
+  ]
+}
