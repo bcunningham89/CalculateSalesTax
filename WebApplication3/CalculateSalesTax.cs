@@ -6,21 +6,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WebApplication3
 {
-    public class CalculateSalesTax : IValidatableObject
+    public class CalculateSalesTax
     {
-        [Required]
-        public double RetailPrice { get; set; }
+        public double SubTotal { get; set; }
 
-        public double TotalSalesTax { get; set; }
+        public double CountySaleTaxPercentage { get; set; }
+        
+        public double SalesTax { get; set; }
 
-        public double TotalAfterSalesTax { get; set; }
+        public double Total { get; set; }
 
-        public IEnumerable<ValidationResult> Validate(ValidationContext validationContext)
-        {
-            if (RetailPrice < 0)
-            {
-                yield return new ValidationResult("The total price needs to be greater than zero.");
-            }
-        }
+        public string testGit {get; set;}
     }
 }

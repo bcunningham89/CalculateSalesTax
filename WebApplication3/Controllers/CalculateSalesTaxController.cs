@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Text.Json;
 
 namespace WebApplication3.Controllers
@@ -14,16 +10,16 @@ namespace WebApplication3.Controllers
     [ApiController]
     public class SalesTaxController : ControllerBase
     {
-
+        // Parametersgittesting
         // GET: api/SalesTax?countyName=Durham&total=209.03
         [HttpGet]
-        public CalculateSalesTax SalesTax(string countyName, double price)
+        public CalculateSalesTax SalesTax(string countyName, double retailPrice)
         {
             var salesTaxClass = new CalculateSalesTax();
 
             if (string.IsNullOrEmpty(countyName))
             {
-
+                throw new ArgumentException("Please ensure to input a County Name.");
             }
             else
             {
@@ -32,19 +28,21 @@ namespace WebApplication3.Controllers
                 {
                     var jsonString = sr.ReadToEnd();
                     var SalesTaxJSON = JsonSerializer.Deserialize<SalesTaxCounties>(jsonString);
-                    var countySalesTax = SalesTaxJSON.Counties.Where(t => t.CountyName == countyName);
-                    if (countySalesTax.Count() != 0)
+                    var countySalesTaxes = SalesTaxJSON.Counties.Where(t => t.CountyName == countyName);
+                    if (countySalesTaxes.Count() != 0)
                     {
-                        var test = countySalesTax.First().SalesTaxPercentage;
-
-                        salesTaxClass.RetailPrice = price;
-                        salesTaxClass.TotalSalesTax = Math.Round(price * (test / 100), 2);
-                        salesTaxClass.TotalAfterSalesTax = Math.Round(price + salesTaxClass.TotalSalesTax, 2);
+                        salesTaxClass.SubTotal = retailPrice;
+                        salesTaxClass.CountySaleTaxPercentage = countySalesTaxes.First().SalesTaxPercentage;
+                        salesTaxClass.SalesTax = retailPrice * salesTaxClass.CountySaleTaxPercentage / 100;
+                        salesTaxClass.Total = salesTaxClass.SubTotal + salesTaxClass.SalesTax;
+                        return salesTaxClass;
+                    }
+                    else
+                    {
+                        throw new ArgumentException("Please ensure you are using a County in NC and is spelled correctly.");
                     }
                 }
             }
-
-            return salesTaxClass;
         }
     }
 }
