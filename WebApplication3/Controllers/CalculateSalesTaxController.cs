@@ -17,7 +17,7 @@ namespace WebApplication3.Controllers
             CountyName  - The County that the retail transaction is taking place.
             RetailPrice - The price of the transaction that the sales tax is going to be calculated.
         NOTE         : Most of the logic is being done in the controller.
-                       In larger projects, this logic would be moved out into a differnt class/method.
+                       In larger projects, this logic would be moved out into a different method.
         GET          : api/SalesTax?countyName=Durham&total=209.03
         **********************************************************************************************/
         [HttpGet]
