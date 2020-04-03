@@ -10,12 +10,20 @@ namespace WebApplication3.Controllers
     [ApiController]
     public class SalesTaxController : ControllerBase
     {
-        // Parametersgittesting
-        // GET: api/SalesTax?countyName=Durham&total=209.03
+        /*********************************************************************************************
+        Purpose      :  To calculate the sales tax for a retail transaction based on the county that 
+                        the transaction took place in.
+        Parameters   :
+            CountyName  - The County that the retail transaction is taking place.
+            RetailPrice - The price of the transaction that the sales tax is going to be calculated.
+        NOTE         : Most of the logic is being done in the controller.
+                       In larger projects, this logic would be moved out into a differnt class/method.
+        GET          : api/SalesTax?countyName=Durham&total=209.03
+        **********************************************************************************************/
         [HttpGet]
-        public CalculateSalesTax SalesTax(string countyName, double retailPrice)
+        public SalesTaxResponse SalesTax(string countyName, double retailPrice)
         {
-            var salesTaxClass = new CalculateSalesTax();
+            var salesTaxResponse = new SalesTaxResponse();
 
             if (string.IsNullOrEmpty(countyName))
             {
@@ -28,14 +36,14 @@ namespace WebApplication3.Controllers
                 {
                     var jsonString = sr.ReadToEnd();
                     var SalesTaxJSON = JsonSerializer.Deserialize<SalesTaxCounties>(jsonString);
-                    var countySalesTaxes = SalesTaxJSON.Counties.Where(t => t.CountyName == countyName);
+                    var countySalesTaxes = SalesTaxJSON.Counties.Where(t => t.CountyName.ToUpper() == countyName.ToUpper());
                     if (countySalesTaxes.Count() != 0)
                     {
-                        salesTaxClass.SubTotal = retailPrice;
-                        salesTaxClass.CountySaleTaxPercentage = countySalesTaxes.First().SalesTaxPercentage;
-                        salesTaxClass.SalesTax = retailPrice * salesTaxClass.CountySaleTaxPercentage / 100;
-                        salesTaxClass.Total = salesTaxClass.SubTotal + salesTaxClass.SalesTax;
-                        return salesTaxClass;
+                        salesTaxResponse.SubTotal = retailPrice;
+                        salesTaxResponse.CountySaleTaxPercentage = countySalesTaxes.First().SalesTaxPercentage;
+                        salesTaxResponse.SalesTax = retailPrice * salesTaxResponse.CountySaleTaxPercentage / 100;
+                        salesTaxResponse.Total = salesTaxResponse.SubTotal + salesTaxResponse.SalesTax;
+                        return salesTaxResponse;
                     }
                     else
                     {

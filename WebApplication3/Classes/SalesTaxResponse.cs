@@ -1,6 +1,6 @@
 ﻿namespace WebApplication3
 {
-    public class CalculateSalesTax
+    public class SalesTaxResponse
     {
         public double SubTotal { get; set; }
 
