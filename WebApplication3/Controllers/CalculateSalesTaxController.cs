@@ -39,9 +39,9 @@ namespace WebApplication3.Controllers
                     var countySalesTaxes = SalesTaxJSON.Counties.Where(t => t.CountyName.ToUpper() == countyName.ToUpper());
                     if (countySalesTaxes.Count() != 0)
                     {
-                        salesTaxResponse.SubTotal = retailPrice;
+                        salesTaxResponse.SubTotal = retailPrice > 0.00 ? retailPrice : 0.00;
                         salesTaxResponse.CountySaleTaxPercentage = countySalesTaxes.First().SalesTaxPercentage;
-                        salesTaxResponse.SalesTax = retailPrice * salesTaxResponse.CountySaleTaxPercentage / 100;
+                        salesTaxResponse.SalesTax = salesTaxResponse.SubTotal * salesTaxResponse.CountySaleTaxPercentage / 100;
                         salesTaxResponse.Total = salesTaxResponse.SubTotal + salesTaxResponse.SalesTax;
                         return salesTaxResponse;
                     }

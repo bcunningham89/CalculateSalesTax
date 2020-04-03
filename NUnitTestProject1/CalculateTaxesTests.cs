@@ -13,6 +13,7 @@ namespace NUnitTestProject1
 
         [TestCase("Durham", 20.04, 1.50)]
         [TestCase("Wake", 15.06, 1.09)]
+        [TestCase("Durham", -1.00, 0.00)]
         public void Calculate_SalesTax_ReturnsCorrect(string county, double total, double expected)
         {
             var controller = new SalesTaxController();
